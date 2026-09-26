@@ -6,7 +6,7 @@ raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cuentos = []
 for f in sorted(glob.glob(os.path.join(raiz, 'cuentos', 'semana*.txt'))):
     cuentos += parse(f)
-json.dump({'inicio': '2026-09-25', 'cuentos': cuentos},
+json.dump({'inicio': '2026-09-25', 'lunes_semana1': '2026-09-21', 'cuentos': cuentos},
           open(os.path.join(raiz, 'public', 'cuentos.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 for c in cuentos:
     obj = 750 if c['momento'] == 'siesta' else 1200

@@ -1,4 +1,4 @@
-=== w1-lun-siesta | 1 | lun | siesta | ja | J.A. y el niño nuevo | Hacer amigos nuevos | Cuento original
+=== w1-lun-siesta | 2 | lun | siesta | ja | J.A. y el niño nuevo | Hacer amigos nuevos | Cuento original
 
 Era lunes, y el sol de Valencia entraba por las ventanas del colegio como si también quisiera aprender cosas. J.A. llegó de la mano de Papá, con su mochila azul y el pelo rizado todo revuelto, porque en el camino había venido corriendo y saltando charcos que no existían.
 
@@ -68,7 +68,7 @@ Esa noche, antes de dormir, J.A. le dijo a Mamá que al día siguiente quería l
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-lun-noche | 1 | lun | noche | clasico | Los tres cerditos | Las cosas bien hechas toman tiempo | Cuento popular, adaptación libre
+=== w1-lun-noche | 2 | lun | noche | clasico | Los tres cerditos | Las cosas bien hechas toman tiempo | Cuento popular, adaptación libre
 
 Había una vez, en un valle verde lleno de flores amarillas, tres cerditos hermanos. El mayor se llamaba Práctico, el del medio se llamaba Flautista, y el más pequeño se llamaba Violinista. Los tres vivían con su mamá en una casita junto al río.
 
@@ -200,7 +200,7 @@ Entonces los cerditos bostezaban: uno, dos, tres. Se ponían sus pijamas. Se met
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-mar-siesta | 1 | mar | siesta | original | Bongo y su tambor | Cuándo hacer ruido y cuándo hacer calma | Cuento original
+=== w1-mar-siesta | 2 | mar | siesta | original | Bongo y su tambor | Cuándo hacer ruido y cuándo hacer calma | Cuento original
 
 En lo más alto de una montaña, donde los árboles son tan grandes que tocan las nubes, vivía un osito llamado Bongo. Bongo tenía el pelo marrón, lleno de rizos, como si alguien le hubiera puesto muchos resortes en la cabeza. Y tenía un tesoro: un tambor rojo que le había regalado su abuelo.
 
@@ -268,7 +268,7 @@ Desde entonces, Bongo es el músico del bosque. Toca fuerte para las fiestas y t
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-mar-noche | 1 | mar | noche | original | La Luna que quería jugar al baloncesto | Calma para dormir | Cuento original
+=== w1-mar-noche | 2 | mar | noche | original | La Luna que quería jugar al baloncesto | Calma para dormir | Cuento original
 
 Hace mucho tiempo, y también ahora mismo, la Luna vive en el cielo. Durante el día duerme detrás de las montañas, y cuando el Sol se va a descansar, ella sale despacito a cuidar el mundo.
 
@@ -388,7 +388,7 @@ Así que cierra los ojos. Respira despacito. La Luna ya empezó a rodar.
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-mie-siesta | 1 | mie | siesta | ja | J.A. y el día que Diego no quería jugar | Cuando un amigo no quiere jugar contigo | Cuento original
+=== w1-mie-siesta | 2 | mie | siesta | ja | J.A. y el día que Diego no quería jugar | Cuando un amigo no quiere jugar contigo | Cuento original
 
 Todos los días, al salir del colegio, J.A. iba con Mamá al parque. Era su momento favorito del día. En el parque había columpios, un tobogán rojo, arena para hacer montañas y, lo mejor de todo, una canasta de baloncesto pequeñita, a la medida de los niños.
 
@@ -472,7 +472,7 @@ Y J.A. caminó el resto del camino muy derechito, como caminan los niños grande
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-mie-noche | 1 | mie | noche | clasico | La liebre y la tortuga | Constancia: terminar lo que se empieza | Fábula de Esopo, adaptación libre
+=== w1-mie-noche | 2 | mie | noche | clasico | La liebre y la tortuga | Constancia: terminar lo que se empieza | Fábula de Esopo, adaptación libre
 
 En un prado muy verde, al lado de un bosque, vivían muchos animales. Había conejos, ardillas, patos, ratones de campo y un búho muy viejo que lo sabía casi todo. Pero los más famosos del prado eran dos: la Liebre y la Tortuga.
 
@@ -582,7 +582,7 @@ Y las dos se quedaron dormidas, paso a paso, respiro a respiro, despacito, despa
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-jue-siesta | 1 | jue | siesta | original | Tomi y el monstruo del armario | Miedo a la oscuridad | Cuento original
+=== w1-jue-siesta | 2 | jue | siesta | original | Tomi y el monstruo del armario | Miedo a la oscuridad | Cuento original
 
 Tomi era un niño de tres años al que le gustaban muchas cosas: correr, saltar en los charcos, comer plátano con miel y, sobre todo, jugar a la pelota con su papá. De día, Tomi no le tenía miedo a nada. Subía al tobogán más alto del parque. Acariciaba a los perros grandes. Hasta se había comido una vez un pimiento verde entero.
 
@@ -644,7 +644,7 @@ Y se duerme tranquilo, porque sabe que la oscuridad solo es la noche jugando a l
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w1-jue-noche | 1 | jue | noche | clasico | Robin Hood y la flecha de plata | Compartir y ayudar a los demás | Leyenda inglesa, adaptación libre
+=== w1-jue-noche | 2 | jue | noche | clasico | Robin Hood y la flecha de plata | Compartir y ayudar a los demás | Leyenda inglesa, adaptación libre
 
 Hace muchísimo tiempo, en un país lejano llamado Inglaterra, había un bosque enorme y verde que se llamaba Sherwood. Sus árboles eran tan viejos y tan altos que las ramas formaban un techo de hojas, y por las mañanas la luz del sol entraba entre ellas como hilos dorados.
 
