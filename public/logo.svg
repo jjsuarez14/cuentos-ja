@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#070E16"/><path d="M8.5 14.5c3.8-1.6 7.7-1.5 11.5.8v14.2c-3.8-2.3-7.7-2.4-11.5-.8V14.5z" stroke="#F5F7FA" stroke-width="1.8" stroke-linejoin="round"/><path d="M31.5 14.5c-3.8-1.6-7.7-1.5-11.5.8v14.2c3.8-2.3 7.7-2.4 11.5-.8V14.5z" stroke="#F5F7FA" stroke-width="1.8" stroke-linejoin="round"/><circle cx="27.5" cy="8.5" r="2.4" fill="#FFB86B"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26385F"/><stop offset=".55" stop-color="#121D33"/><stop offset="1" stop-color="#070E16"/></linearGradient>
+ <radialGradient id="glow" cx="620" cy="360" r="420" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFB86B" stop-opacity=".42"/><stop offset=".45" stop-color="#FF9A4A" stop-opacity=".12"/><stop offset="1" stop-color="#FF9A4A" stop-opacity="0"/></radialGradient>
+ <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE3B8"/><stop offset=".5" stop-color="#FFC27A"/><stop offset="1" stop-color="#F59A45"/></linearGradient>
+ <linearGradient id="pageL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#DCE3EE"/><stop offset=".8" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2E0"/></linearGradient>
+ <linearGradient id="pageR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#D5DDEA"/><stop offset=".8" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D2E0"/></linearGradient>
+ <linearGradient id="cover" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5A55A"/><stop offset="1" stop-color="#C96A24"/></linearGradient>
+ <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="22"/><feOffset dy="26"/><feComponentTransfer><feFuncA type="linear" slope=".55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="mg" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="26" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <radialGradient id="vig" cx="512" cy="430" r="720" gradientUnits="userSpaceOnUse"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></radialGradient>
+ <linearGradient id="hi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<rect width="1024" height="1024" fill="url(#glow)"/>
+<g fill="#fff"><circle cx="232" cy="238" r="7" opacity=".75"/><circle cx="330" cy="150" r="4.5" opacity=".5"/><circle cx="800" cy="212" r="5" opacity=".55"/><circle cx="178" cy="420" r="4" opacity=".4"/><circle cx="858" cy="430" r="4" opacity=".35"/></g>
+<path d="M300 210l8 20 20 8-20 8-8 20-8-20-20-8 20-8z" fill="#FFE3B8" opacity=".9"/>
+<g filter="url(#mg)"><path d="M686 214a168 168 0 1 0 132 262a138 138 0 1 1-132-262z" fill="url(#moon)"/></g>
+<g filter="url(#sh)">
+ <path d="M192 612c96-44 210-48 320 6v212c-110-52-224-50-320-6z" fill="url(#cover)"/>
+ <path d="M832 612c-96-44-210-48-320 6v212c110-52 224-50 320-6z" fill="url(#cover)"/>
+ <path d="M212 580c96-46 196-46 300 10v222c-104-54-204-56-300-10z" fill="url(#pageL)"/>
+ <path d="M812 580c-96-46-196-46-300 10v222c104-54 204-56 300-10z" fill="url(#pageR)"/>
+ <path d="M512 590v222" stroke="#9AA8BD" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+ <g stroke="#AEB9CA" stroke-width="9" stroke-linecap="round" opacity=".55" fill="none">
+  <path d="M262 632c64-22 128-20 196 8"/><path d="M262 680c64-22 128-20 196 8"/><path d="M262 728c64-22 118-20 170 4"/>
+  <path d="M762 632c-64-22-128-20-196 8"/><path d="M762 680c-64-22-128-20-196 8"/><path d="M762 728c-64-22-118-20-170 4"/>
+ </g>
+</g>
+<rect width="1024" height="1024" fill="url(#vig)"/>
+<rect width="1024" height="1024" fill="url(#hi)"/>
+</svg>
