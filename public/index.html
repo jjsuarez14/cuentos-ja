@@ -85,6 +85,10 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .sec-h h3{margin:0;font-size:1.05rem;font-weight:800}
 .sec-h span{color:var(--t3);font-size:.8rem;font-weight:700;font-variant-numeric:tabular-nums}
 .seg{display:grid;grid-template-columns:repeat(4,1fr);padding:4px;border-radius:999px;background:var(--glass-1);border:1px solid var(--hair);margin-bottom:8px}
+.sec .seg{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.sec .seg::-webkit-scrollbar{display:none}
+.sec .seg button{flex:0 0 64px}
+.fest{color:var(--accent);letter-spacing:.04em}
 .seg button{height:36px;border-radius:999px;font-weight:800;font-size:.86rem;color:var(--t2)}
 .seg button[aria-pressed="true"]{background:var(--glass-3);color:var(--t1)}
 .seg button:disabled{color:var(--t3);opacity:.55}
@@ -143,7 +147,8 @@ html.nocturno .sheet-in{background:#0E1116}
 .sw[aria-checked="true"]{background:var(--accent)}
 .sw[aria-checked="true"]::after{transform:translateX(20px)}
 body.sheet-open .scrim{opacity:1;pointer-events:auto}
-body.sheet-open .sheet{transform:none}
+body.sheet-open .sheet{transform:none;visibility:visible;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.sheet{visibility:hidden;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility 0s .3s}
 .cargando{padding:80px 0;text-align:center;color:var(--t3);font-weight:700}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -175,88 +180,97 @@ const I = {
   orn:'<svg width="64" height="12" viewBox="0 0 64 12" fill="none"><path d="M0 6h24M40 6h24" stroke="currentColor" stroke-width="1"/><path d="M32 1.5l1.3 3.2 3.2 1.3-3.2 1.3L32 10.5l-1.3-3.2L27.5 6l3.2-1.3z" fill="var(--accent)"/></svg>'
 };
 const DIAS = {lun:"Lunes",mar:"Martes",mie:"Miércoles",jue:"Jueves",vie:"Viernes",sab:"Sábado",dom:"Domingo"};
-const ORDEN = ["lun","mar","mie","jue","vie","sab","dom"];
+const DIAJS = ["dom","lun","mar","mie","jue","vie","sab"];
 const TIPO = {ja:"Con J.A.",clasico:"Clásico",original:"Original"};
-const SEMANAS = 4, PPM = 110;
+const PPM = 110;
 const LUNES0 = new Date(2026,8,21);  // lunes de la semana 1
-const ARRANQUE = new Date(2026,8,25); // primer día con cuentos (vie 25/09/2026)
+const ARRANQUE = new Date(2026,8,25); // primer día con cuentos
 
 const store={get(k,d){try{const v=localStorage.getItem("cja."+k);return v===null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("cja."+k,JSON.stringify(v))}catch(e){}}};
 let leidos=store.get("leidos",{}), tam=store.get("tam",1.2), nocturno=store.get("nocturno",false), wake=store.get("wake",true);
 
 const ahora=new Date(), hoy0=new Date(ahora.getFullYear(),ahora.getMonth(),ahora.getDate());
-const diasDesde=Math.max(0,Math.round((hoy0-LUNES0)/864e5)), ciclo=Math.floor(diasDesde/28);
-const diaHoy=["dom","lun","mar","mie","jue","vie","sab"][ahora.getDay()];
+const clave=f=>`${f.getFullYear()}-${String(f.getMonth()+1).padStart(2,"0")}-${String(f.getDate()).padStart(2,"0")}`;
+const diasUTC=f=>Date.UTC(f.getFullYear(),f.getMonth(),f.getDate())/864e5;
+const semanaDe=f=>Math.floor((diasUTC(f)-diasUTC(LUNES0))/7)+1;
+const diaDe=(s,i)=>{const f=new Date(LUNES0);f.setDate(f.getDate()+(s-1)*7+i);return f};
 const momento=ahora.getHours()<17?"siesta":"noche";
-const semHoy=Math.floor(diasDesde/7)%SEMANAS+1;
-let semVista=semHoy, CUENTOS=[], cargadas=[];
+const hoyK=clave(hoy0), semHoy=Math.max(1,semanaDe(hoy0));
+let semVista=semHoy, CUENTOS=[], AGENDA={}, FEST={}, POR_ID={}, SEMANAS=[], FECHA_DE={};
 
-const fechaDe=(s,d)=>{const f=new Date(LUNES0);f.setDate(f.getDate()+ciclo*28+(s-1)*7+ORDEN.indexOf(d));return f};
 const fmt=f=>f.toLocaleDateString("es",{day:"numeric",month:"short"}).replace(".","");
 const mins=c=>Math.round(c.palabras/PPM);
-const buscar=(s,d,m)=>CUENTOS.find(c=>c.semana===s&&c.dia===d&&c.momento===m);
-const deHoy=m=>buscar(semHoy,diaHoy,m)||CUENTOS.filter(c=>c.dia===diaHoy&&c.momento===m).sort((a,b)=>a.semana-b.semana)[0];
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 const app=document.getElementById("app");
 const ir=id=>{location.hash=id};
+/* Si hoy no hay cuento cargado, se repite una noche ya publicada (rotación estable por fecha) */
+function respaldo(){const n=CUENTOS.filter(c=>c.momento==="noche");return n.length?n[diasUTC(hoy0)%n.length]:null}
 
 function portada(){
   document.title="Cuentos de J.A.";
-  const principal=deHoy(momento), otro=deHoy(momento==="siesta"?"noche":"siesta");
-  const repetido=[principal,otro].some(c=>c&&c.semana!==semHoy);
-  const saludo=momento==="siesta"?"Para la siesta de hoy":"Para dormir esta noche";
+  const e=AGENDA[hoyK]||{}, fest=FEST[hoyK];
+  let principal, otro=null, repetido=false;
+  if(momento==="siesta"&&e.siesta){principal=POR_ID[e.siesta];otro=e.noche?POR_ID[e.noche]:null}
+  else if(e.noche){principal=POR_ID[e.noche]}
+  else {principal=respaldo();repetido=!!principal}
+  const saludo=principal&&principal.momento==="siesta"?"Para la siesta de hoy":"Para dormir esta noche";
   const l=principal&&leidos[principal.id];
-  let seg=""; for(let s=1;s<=SEMANAS;s++){const ok=cargadas.includes(s);seg+=`<button data-sem="${s}" aria-pressed="${s===semVista}" ${ok?"":"disabled"}>S${s}</button>`}
-  let dias=""; for(const d of ORDEN){
-    if(fechaDe(semVista,d)<ARRANQUE) continue;
-    const esHoy=d===diaHoy&&semVista===semHoy;
-    dias+=`<div class="dia glass${esHoy?" hoy":""}"><div class="dia-h"><span>${DIAS[d]} ${fmt(fechaDe(semVista,d))}</span>${esHoy?"<span>Hoy</span>":""}</div>${fila(buscar(semVista,d,"siesta"),"siesta")}${fila(buscar(semVista,d,"noche"),"noche")}</div>`;
+  const seg=SEMANAS.map(s=>`<button data-sem="${s}" aria-pressed="${s===semVista}">S${s}</button>`).join("");
+  let dias="";
+  for(let i=0;i<7;i++){
+    const f=diaDe(semVista,i), k=clave(f);
+    if(f<ARRANQUE) continue;
+    const a=AGENDA[k]||{}, fe=FEST[k], esHoy=k===hoyK;
+    const finde=f.getDay()===0||f.getDay()===6;
+    dias+=`<div class="dia glass${esHoy?" hoy":""}"><div class="dia-h"><span>${DIAS[DIAJS[f.getDay()]]} ${fmt(f)}</span><span>${esHoy?"Hoy":""}${fe?`${esHoy?" · ":""}<span class="fest">${esc(fe)}</span>`:""}</span></div>${a.siesta?fila(POR_ID[a.siesta]):""}${a.noche?fila(POR_ID[a.noche]):fila(null)}</div>`;
   }
-  const total=CUENTOS.length, hechos=CUENTOS.filter(c=>leidos[c.id]).length;
+  const asignados=Object.keys(FECHA_DE), hechos=asignados.filter(id=>leidos[id]).length;
   app.innerHTML=`<div class="app">
     <header class="head">
-      <div class="brand">${LOGO}<div><h1>Cuentos de J.A.</h1><p>${DIAS[diaHoy]} ${fmt(hoy0)} · Semana ${semHoy}</p></div></div>
+      <div class="brand">${LOGO}<div><h1>Cuentos de J.A.</h1><p>${DIAS[DIAJS[hoy0.getDay()]]} ${fmt(hoy0)} · Semana ${semHoy}</p></div></div>
       <button class="round" id="bNoct" aria-label="Modo nocturno" aria-pressed="${nocturno}">${I.luna}</button>
     </header>
-    <p class="eyebrow">${saludo}</p>
+    <p class="eyebrow">${saludo}${fest?` · <span class="fest">${esc(fest)}</span>`:""}</p>
     ${principal?`<section class="hero glass">
-      <div class="chips"><span class="chip acc">${momento==="siesta"?I.sol+"Siesta":I.luna+"Noche"}</span><span class="chip">${TIPO[principal.tipo]}</span></div>
+      <div class="chips"><span class="chip acc">${principal.momento==="siesta"?I.sol+"Siesta":I.luna+"Noche"}</span><span class="chip">${TIPO[principal.tipo]}</span></div>
       <h2>${esc(principal.titulo)}</h2>
       <p class="tema">${esc(principal.tema)}</p>
       <div class="meta"><span>≈ ${mins(principal)} min</span><span>${principal.palabras} palabras</span>${l?`<span style="color:var(--ok)">Leído ${l}</span>`:""}</div>
       <button class="cta" data-id="${principal.id}">${I.libro}Leer ahora</button>
     </section>`:`<section class="hero glass"><h2>Aún no hay cuento para hoy</h2></section>`}
-    ${otro?`<button class="next glass" data-id="${otro.id}"><span class="ic">${otro.momento==="siesta"?I.sol:I.luna}</span><span><small>${otro.momento==="siesta"?"Siesta":"Noche"} · ≈ ${mins(otro)} min</small><b>${esc(otro.titulo)}</b></span><span class="arr">${I.flecha}</span></button>`:""}
-    ${repetido?`<p class="aviso">La semana ${semHoy} aún no tiene cuento para hoy; se repite uno de otra semana.</p>`:""}
+    ${otro?`<button class="next glass" data-id="${otro.id}"><span class="ic">${I.luna}</span><span><small>Noche · ≈ ${mins(otro)} min</small><b>${esc(otro.titulo)}</b></span><span class="arr">${I.flecha}</span></button>`:""}
+    ${repetido?`<p class="aviso">Todavía no hay cuento nuevo para hoy; repetimos uno ya publicado.</p>`:""}
     <section class="sec">
-      <div class="sec-h"><h3>Semana ${semVista}</h3><span>${hechos}/${total} leídos</span></div>
+      <div class="sec-h"><h3>Semana ${semVista}</h3><span>${hechos}/${asignados.length} leídos</span></div>
       <div class="seg" role="group" aria-label="Semana">${seg}</div>
-      <p class="rango">${fmt(new Date(Math.max(fechaDe(semVista,"lun"),ARRANQUE)))} – ${fmt(fechaDe(semVista,"dom"))}</p>
+      <p class="rango">${fmt(new Date(Math.max(diaDe(semVista,0),ARRANQUE)))} – ${fmt(diaDe(semVista,6))}</p>
       <div class="dias">${dias}</div>
     </section>
-    <p class="pie">Cada semana va de lunes a domingo y rota del 1 al 4 (la semana 1 empezó el viernes 25 de septiembre). Antes de las 17:00 se propone la siesta; después, la noche. Tiempos a ${PPM} palabras por minuto.</p>
+    <p class="pie">Siesta solo sábados, domingos y festivos escolares de Valencia; noche, todos los días. Antes de las 17:00 se propone la siesta cuando la hay. Tiempos a ${PPM} palabras por minuto.</p>
   </div>`;
   app.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>ir(b.dataset.id));
   app.querySelectorAll("[data-sem]").forEach(b=>b.onclick=()=>{semVista=+b.dataset.sem;portada()});
+  const act=app.querySelector('.seg [aria-pressed="true"]'); if(act) act.scrollIntoView({block:"nearest",inline:"center"});
   document.getElementById("bNoct").onclick=()=>{setNoct(!nocturno);portada()};
   soltar();
 }
-function fila(c,m){
-  if(!c) return `<div class="row vacia"><span class="m">${m==="siesta"?I.sol:I.luna}</span><span><b>Próximamente</b></span><span></span></div>`;
+function fila(c){
+  if(!c) return `<div class="row vacia"><span class="m">${I.luna}</span><span><b>Próximamente</b></span><span></span></div>`;
   const l=leidos[c.id];
   return `<button class="row" data-id="${c.id}"><span class="m">${c.momento==="siesta"?I.sol:I.luna}</span><span><b>${esc(c.titulo)}</b><small>${TIPO[c.tipo]} · ${esc(c.tema)}</small></span><span class="r${l?" ok":""}">${l?I.check:mins(c)+" min"}</span></button>`;
 }
 
 function lector(c){
   document.title=c.titulo;
-  const sig=c.momento==="siesta"?buscar(c.semana,c.dia,"noche"):null;
+  const fk=FECHA_DE[c.id], sig=c.momento==="siesta"&&fk&&AGENDA[fk].noche?POR_ID[AGENDA[fk].noche]:null;
+  const fch=fk?new Date(fk+"T12:00:00"):null;
   const l=leidos[c.id];
   app.innerHTML=`<div class="bar"><div class="bar-in">
       <button class="pill-btn" id="bVolver">${I.atras}Cuentos</button><span class="sp"></span>
       <button class="round" id="bAjustes" aria-label="Ajustes de lectura">${I.aa}</button>
     </div><div class="prog"><i id="prog"></i></div></div>
     <article class="lector">
-      <div class="chips"><span class="chip acc">${c.momento==="siesta"?I.sol+"Siesta":I.luna+"Noche"}</span><span class="chip">≈ ${mins(c)} min</span><span class="chip">${DIAS[c.dia]}</span></div>
+      <div class="chips"><span class="chip acc">${c.momento==="siesta"?I.sol+"Siesta":I.luna+"Noche"}</span><span class="chip">≈ ${mins(c)} min</span>${fch?`<span class="chip">${DIAS[DIAJS[fch.getDay()]].slice(0,3)} ${fmt(fch)}</span>`:""}</div>
       <h1>${esc(c.titulo)}</h1>
       <p class="fuente">${esc(c.fuente)}</p>
       <div class="orn">${I.orn}</div>
@@ -309,7 +323,11 @@ addEventListener("scroll",()=>{const p=document.getElementById("prog");if(!p)ret
 function ruta(){cerrarSheet();const c=CUENTOS.find(x=>x.id===location.hash.slice(1));c?lector(c):portada()}
 addEventListener("hashchange",ruta);
 setTam(tam); setNoct(nocturno);
-fetch("/cuentos.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{CUENTOS=d.cuentos;cargadas=[...new Set(CUENTOS.map(c=>c.semana))].sort();ruta()})
+fetch("/cuentos.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{CUENTOS=d.cuentos;AGENDA=d.agenda||{};FEST=d.festivos||{};POR_ID=Object.fromEntries(CUENTOS.map(c=>[c.id,c]));
+  for(const [k,v] of Object.entries(AGENDA)) for(const id of Object.values(v)) FECHA_DE[id]=k;
+  SEMANAS=[...new Set(Object.keys(AGENDA).map(k=>semanaDe(new Date(k+"T12:00:00"))))].sort((a,b)=>a-b);
+  if(!SEMANAS.includes(semVista)) semVista=SEMANAS[SEMANAS.length-1];
+  ruta()})
  .catch(()=>{app.innerHTML='<div class="app"><p class="cargando">No se pudieron cargar los cuentos. Revise la conexión y vuelva a abrir.</p></div>'});
 </script>
 </body>
