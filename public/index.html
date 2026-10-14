@@ -125,6 +125,10 @@ html.nocturno .bar{background:rgba(5,8,12,.8)}
 .texto{font-family:var(--serif);font-size:var(--read-size);line-height:1.75;color:var(--read)}
 .texto p{margin:0 0 .95em}
 .texto p:first-child::first-letter{float:left;font-size:3.3em;line-height:.86;padding:.06em .1em 0 0;color:var(--accent);font-weight:500}
+.nota{margin:0 0 26px;padding:14px 16px;border-radius:var(--r-sm);background:var(--accent-soft);border:1px solid rgba(255,184,107,.25)}
+.nota summary{cursor:pointer;font-weight:800;font-size:.86rem;color:var(--accent);list-style:none}
+.nota summary::-webkit-details-marker{display:none}
+.nota ul{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:.9rem;line-height:1.45;color:var(--t1)}
 .fin{margin-top:40px;display:flex;flex-direction:column;gap:12px;align-items:stretch}
 .fin .orn{margin:0 0 8px}
 .ghost{height:52px;border-radius:999px;background:var(--glass-1);border:1px solid var(--hair);font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;gap:8px;padding-inline:16px;text-align:center}
@@ -181,7 +185,7 @@ const I = {
 };
 const DIAS = {lun:"Lunes",mar:"Martes",mie:"Miércoles",jue:"Jueves",vie:"Viernes",sab:"Sábado",dom:"Domingo"};
 const DIAJS = ["dom","lun","mar","mie","jue","vie","sab"];
-const TIPO = {ja:"Con J.A.",clasico:"Clásico",original:"Original"};
+const TIPO = {ja:"Con J.A.",clasico:"Clásico",original:"Original",en:"English",spidey:"Spidey"};
 const PPM = 110;
 const LUNES0 = new Date(2026,8,21);  // lunes de la semana 1
 const ARRANQUE = new Date(2026,8,25); // primer día con cuentos
@@ -199,7 +203,7 @@ const hoyK=clave(hoy0), semHoy=Math.max(1,semanaDe(hoy0));
 let semVista=semHoy, CUENTOS=[], AGENDA={}, FEST={}, POR_ID={}, SEMANAS=[], FECHA_DE={};
 
 const fmt=f=>f.toLocaleDateString("es",{day:"numeric",month:"short"}).replace(".","");
-const mins=c=>Math.round(c.palabras/PPM);
+const mins=c=>Math.max(2,Math.round(c.palabras/(c.lang==="en"?90:PPM)));
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 const app=document.getElementById("app");
 const ir=id=>{location.hash=id};
@@ -273,8 +277,9 @@ function lector(c){
       <div class="chips"><span class="chip acc">${c.momento==="siesta"?I.sol+"Siesta":I.luna+"Noche"}</span><span class="chip">≈ ${mins(c)} min</span>${fch?`<span class="chip">${DIAS[DIAJS[fch.getDay()]].slice(0,3)} ${fmt(fch)}</span>`:""}</div>
       <h1>${esc(c.titulo)}</h1>
       <p class="fuente">${esc(c.fuente)}</p>
+      ${c.nota?`<details class="nota" open><summary>Para papá · vocabulario y pronunciación</summary><ul>${c.nota.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></details>`:""}
       <div class="orn">${I.orn}</div>
-      <div class="texto">${c.p.map(p=>`<p>${esc(p)}</p>`).join("")}</div>
+      <div class="texto" lang="${c.lang||"es"}">${c.p.map(p=>`<p>${esc(p)}</p>`).join("")}</div>
       <div class="fin">
         <div class="orn">${I.orn}</div>
         <button class="cta${l?" done":""}" id="bLeido">${I.check}${l?"Leído el "+l:"Marcar como leído"}</button>

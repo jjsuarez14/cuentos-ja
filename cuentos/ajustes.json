@@ -1,5 +1,14 @@
 {
-  "_nota": "Asignaciones manuales. Desde el 07/10/2026 las siestas de lunes a viernes lectivos pasan al banco y se reutilizan en fines de semana o festivos.",
+  "_nota": "Asignaciones manuales por fecha. Lo que una asignación desplaza pasa al banco para reutilizarlo. Desde el 07/10/2026 las siestas de días lectivos también van al banco.",
   "2026-10-12": {"siesta": "w3-mie-siesta"},
-  "2026-10-17": {"siesta": "w3-jue-siesta"}
+  "2026-10-17": {"siesta": "w3-jue-siesta"},
+  "_ingles": "Inglés martes y jueves (desde el 15/10/2026)",
+  "2026-10-15": {"noche": "en-01"},
+  "2026-10-20": {"noche": "en-02"},
+  "2026-10-22": {"noche": "en-03"},
+  "2026-10-27": {"noche": "en-04"},
+  "2026-10-29": {"noche": "en-05"},
+  "_spidey": "Spidey y sus sorprendentes amigos: 1 por semana, solo en la app (no imprimible)",
+  "2026-10-24": {"siesta": "sp-01"},
+  "2026-11-01": {"siesta": "sp-02"}
 }

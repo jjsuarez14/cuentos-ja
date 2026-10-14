@@ -39,13 +39,15 @@ def cargar_festivos():
 
 def main():
     cuentos = []
-    for f in sorted(glob.glob(os.path.join(RAIZ, 'cuentos', 'semana*.txt'))):
+    for f in sorted(glob.glob(os.path.join(RAIZ, 'cuentos', '*.txt'))):
         cuentos += parse(f)
     por_id = {c['id']: c for c in cuentos}
     festivos = cargar_festivos()
 
     agenda = {}
     for c in cuentos:
+        if c['semana'] == 0:  # se ubica solo vía ajustes.json
+            continue
         d = LUNES0 + timedelta(days=(c['semana'] - 1) * 7 + DIAS.index(c['dia']))
         agenda.setdefault(d.isoformat(), {})[c['momento']] = c['id']
 
@@ -99,9 +101,10 @@ def main():
 
     print(f'{len(cuentos)} cuentos · agenda {ARRANQUE} → {ultimo} · banco: {banco or "vacío"}')
     for c in cuentos:
-        obj = 750 if c['momento'] == 'siesta' else 1200
+        obj = 350 if c['lang'] == 'en' else (750 if c['momento'] == 'siesta' else 1200)
+        tol = 0.15 if c['lang'] == 'en' else 0.10
         dv = (c['palabras'] - obj) / obj
-        if abs(dv) > 0.10:
+        if abs(dv) > tol:
             errores.append(f"{c['id']}: {c['palabras']} palabras ({dv:+.0%})")
     if errores:
         print('ERRORES:'); [print(' -', e) for e in errores]; sys.exit(1)
