@@ -182,11 +182,11 @@ Pinocho tuvo una idea. Juntó todas las maderitas que había dentro de la ballen
 
 La ballena estornudó tan fuerte que Pinocho, Geppetto, Pepito Grillo y el barquito salieron volando por los aires y cayeron suavemente en el agua, cerca de la orilla.
 
-Pinocho ayudó a su papá a remar hasta la playa. Estaban cansados y mojados, pero muy contentos. Esa noche, en casa, Pinocho arropó a Geppetto con una manta y le preparó una sopa calentita.
+Pinocho ayudó a su papá a remar hasta la playa. Estaban cansados y mojados, pero muy contentos. Esa noche, en casa, Pinocho arropó a Geppetto con una cobija y le preparó una sopa calentita.
 
 —Papá, mañana voy a ir a la escuela. De verdad. Y te voy a ayudar en el taller.
 
-Geppetto sonrió y se quedó dormido. Pinocho se quedó un rato a su lado, mirándolo dormir, y le subió la manta hasta los hombros para que no pasara frío, como hacía su papá con él.
+Geppetto sonrió y se quedó dormido. Pinocho se quedó un rato a su lado, mirándolo dormir, y le subió la cobija hasta los hombros para que no pasara frío, como hacía su papá con él.
 
 Esa misma noche, mientras los dos dormían, la luz azul entró por la ventana una vez más. El Hada miró a Pinocho, que había sido valiente, bueno y había dicho la verdad. Tocó su cabeza con la varita, y... ¡plin!
 
@@ -298,7 +298,7 @@ Y colorín colorado, este cuento se ha acabado.
 
 Cuando todos los niños se meten en la cama, y las luces de las casas se apagan una por una, en algún lugar muy lejano sale un tren. No es un tren cualquiera. Es un tren azul oscuro, con ventanas de luz amarilla y una chimenea que no echa humo, sino estrellitas. Es el Tren de los Sueños.
 
-El maquinista del Tren de los Sueños es un búho viejo y amable, con gafas redondas y una gorra azul. Se llama Don Plácido. Y cada noche, Don Plácido recorre el mundo entero, recogiendo a los niños que están a punto de dormirse.
+El maquinista del Tren de los Sueños es un búho viejo y amable, con lentes redondos y una gorra azul. Se llama Don Plácido. Y cada noche, Don Plácido recorre el mundo entero, recogiendo a los niños que están a punto de dormirse.
 
 Esta noche, el tren se detiene suavemente delante de una ventana. Chuuu, chuuu. Don Plácido se asoma y dice en voz bajita:
 
@@ -306,7 +306,7 @@ Esta noche, el tren se detiene suavemente delante de una ventana. Chuuu, chuuu. 
 
 Y un niño de pelo rizado, que estaba medio dormido abrazando su peluche, se sube al tren. No hace falta llevar maleta. No hace falta ponerse zapatos. Solo hay que llevar el pijama y cerrar los ojos.
 
-Dentro del tren, los asientos son blanditos como nubes. Hay mantas suaves y almohadas que huelen a lavanda. El niño se sienta junto a la ventana, se tapa con una manta y mira hacia afuera.
+Dentro del tren, los asientos son blanditos como nubes. Hay cobijas suaves y almohadas que huelen a lavanda. El niño se sienta junto a la ventana, se tapa con una cobija y mira hacia afuera.
 
 —Próxima estación —dice Don Plácido—: la Estación del Bosque.
 
@@ -362,7 +362,7 @@ En la Estación de las Montañas hay una cabra que se acomoda entre las rocas, y
 
 Todo está en silencio. Solo se oye el tren: chucu... chucu... chucu... cada vez más lento.
 
-El niño tiene los ojos casi cerrados. La manta está calentita. La almohada huele a lavanda. Don Plácido se da la vuelta y lo mira con cariño.
+El niño tiene los ojos casi cerrados. La cobija está calentita. La almohada huele a lavanda. Don Plácido se da la vuelta y lo mira con cariño.
 
 —Ya casi llegamos —le dice—. Queda la última estación.
 
@@ -370,7 +370,7 @@ El niño tiene los ojos casi cerrados. La manta está calentita. La almohada hue
 
 —La Estación de las Nubes. Es donde empiezan los sueños.
 
-En el vagón de al lado, otros niños también se están quedando dormidos. Una niña abrazada a un conejo de peluche. Un niño con un pijama de dinosaurios. Un bebé que chupa su chupete muy despacito. Todos van en el Tren de los Sueños, cada uno hacia su propio sueño.
+En el vagón de al lado, otros niños también se están quedando dormidos. Una niña abrazada a un conejo de peluche. Un niño con un pijama de dinosaurios. Un bebé que chupa su chupón muy despacito. Todos van en el Tren de los Sueños, cada uno hacia su propio sueño.
 
 El tren sigue subiendo. Sube por encima de las montañas, por encima de los pájaros, por encima de todo. Y de repente, las vías se terminan, pero el tren no se cae. Sigue avanzando, suave como una pluma, sobre las nubes.
 
@@ -384,7 +384,7 @@ El niño piensa. Podría soñar con jugar al baloncesto en una cancha de nubes, 
 
 Mientras lo piensa, se le cierran los ojos. Del todo.
 
-Don Plácido lo tapa con la manta, le arregla la almohada y apaga la lucecita amarilla de su ventana.
+Don Plácido lo tapa con la cobija, le arregla la almohada y apaga la lucecita amarilla de su ventana.
 
 —Buenas noches, pasajero —le dice—. Mañana, cuando salga el sol, el tren te llevará de vuelta a tu cama. Tus papás estarán ahí, esperándote con un beso.
 
@@ -394,7 +394,7 @@ Y colorín colorado, este cuento se ha acabado.
 
 === w3-mie-siesta | 3 | mie | siesta | ja | J.A. y el campeonato de ordenar | Recoger los juguetes | Cuento original
 
-Aquel miércoles por la tarde, el cuarto de J.A. parecía un campo de batalla. Había bloques por el suelo, coches debajo de la cama, peluches encima de la silla, piezas de rompecabezas en la alfombra y un tambor de juguete dentro de la papelera. Hasta había un calcetín colgado de la lámpara, y nadie sabía cómo había llegado ahí.
+Aquel miércoles por la tarde, el cuarto de J.A. parecía un campo de batalla. Había bloques por el suelo, carros debajo de la cama, peluches encima de la silla, piezas de rompecabezas en la alfombra y un tambor de juguete dentro de la papelera. Hasta había un media colgado de la lámpara, y nadie sabía cómo había llegado ahí.
 
 Mamá se asomó por la puerta y abrió mucho los ojos.
 
@@ -406,7 +406,7 @@ J.A. se rió.
 
 —Ya lo veo. Bueno, ahora hay que recoger antes de cenar.
 
-J.A. puso cara larga. Recoger era lo más aburrido del mundo. Mucho más aburrido que esperar en la fila del médico, o que ir en el coche cuando hay tráfico.
+J.A. puso cara larga. Recoger era lo más aburrido del mundo. Mucho más aburrido que esperar en la fila del médico, o que ir en el carro cuando hay tráfico.
 
 —No quiero recoger. Es muy aburrido. Y son muchísimas cosas.
 
@@ -438,23 +438,23 @@ J.A. agarró un bloque rojo, apuntó como hacen los jugadores de verdad, dobló 
 
 —¡Dos puntos para J.A.! —gritó Mamá, como una locutora de la tele.
 
-J.A. agarró un coche. Se alejó hasta la alfombra. Lanzó. ¡Pum!
+J.A. agarró un carro. Se alejó hasta la alfombra. Lanzó. ¡Pum!
 
 —¡Tres puntos! ¡Desde la línea de tres! ¡El público se vuelve loco!
 
 Mamá hizo ruido de público con la boca: "¡Aaaaah!". Y J.A. se reía tanto que casi no podía apuntar.
 
-Bloque azul: ¡dos puntos! Bloque verde: ¡dos puntos! Un coche amarillo pegó en el borde de la caja y cayó fuera.
+Bloque azul: ¡dos puntos! Bloque verde: ¡dos puntos! Un carro amarillo pegó en el borde de la caja y cayó fuera.
 
 —¡Rebote! —gritó Mamá—. ¡Hay que ir a por él!
 
-J.A. corrió, recogió el coche y lo metió con la mano, como una volcada.
+J.A. corrió, recogió el carro y lo metió con la mano, como una volcada.
 
 —¡VOLCADA! ¡Qué jugada!
 
-Después llevó las piezas del rompecabezas con cuidado, una por una, a su caja pequeña, sin perder ninguna. Puso los peluches en fila sobre la cama: el oso, el perro, el conejo y el león, como si fueran los jugadores del banquillo. Sacó el tambor de la papelera. Y Mamá, subida en una silla, rescató el calcetín de la lámpara.
+Después llevó las piezas del rompecabezas con cuidado, una por una, a su caja pequeña, sin perder ninguna. Puso los peluches en fila sobre la cama: el oso, el perro, el conejo y el león, como si fueran los jugadores del banquillo. Sacó el tambor de la papelera. Y Mamá, subida en una silla, rescató el media de la lámpara.
 
-—¡Y el calcetín vuelve al vestuario! —dijo Mamá, y lo lanzó al cesto de la ropa sucia.
+—¡Y el media vuelve al vestuario! —dijo Mamá, y lo lanzó al cesto de la ropa sucia.
 
 J.A. miró a su alrededor. El suelo estaba limpio. La cama estaba ordenada. Los juguetes estaban en su caja.
 
@@ -558,7 +558,7 @@ Y siguió su camino, silbando, hasta que llegó al castillo del rey. Allí todos
 
 —Déjelo en mis manos —dijo el sastre.
 
-Fue al bosque y encontró a los dos gigantes durmiendo la siesta bajo un árbol, roncando tan fuerte que las hojas temblaban. El sastre llenó sus bolsillos de piñas, se subió a una rama justo encima de ellos, y le tiró una piña al primer gigante en la nariz.
+Fue al bosque y encontró a los dos gigantes durmiendo la siesta bajo un árbol, roncando tan fuerte que las hojas temblaban. El sastre llenó sus bolsillos de bellotas, se subió a una rama justo encima de ellos, y le tiró una bellota al primer gigante en la nariz.
 
 El gigante se despertó y le dijo al otro:
 
@@ -566,19 +566,19 @@ El gigante se despertó y le dijo al otro:
 
 —Yo no te tiré nada —dijo el otro, y siguió durmiendo.
 
-El sastre le tiró una piña al segundo gigante.
+El sastre le tiró una bellota al segundo gigante.
 
 —¡Eh! ¿Por qué me tiras cosas tú a mí?
 
 —¡Yo no te tiré nada!
 
-Y así, piña va, piña viene, los dos gigantes empezaron a discutir. Discutían tanto, y estaban tan enojados el uno con el otro, que al final cada uno agarró sus cosas y se fue por un camino distinto, uno hacia el norte y otro hacia el sur, gruñendo:
+Y así, bellota va, bellota viene, los dos gigantes empezaron a discutir. Discutían tanto, y estaban tan enojados el uno con el otro, que al final cada uno agarró sus cosas y se fue por un camino distinto, uno hacia el norte y otro hacia el sur, gruñendo:
 
 —¡No quiero vivir más contigo!
 
 Y nunca más volvieron a aquel bosque.
 
-El sastre volvió al castillo y le contó todo al rey. El rey se rió tanto con la historia de las piñas que tuvo que sentarse.
+El sastre volvió al castillo y le contó todo al rey. El rey se rió tanto con la historia de las bellotas que tuvo que sentarse.
 
 —Eres el hombre más listo de mi reino —le dijo—. No necesitaste ser grande ni fuerte. Solo necesitaste pensar.
 
@@ -596,7 +596,7 @@ Y colorín colorado, este cuento se ha acabado.
 
 === w3-jue-siesta | 3 | jue | siesta | original | Hugo y el camión de la basura | Dar las gracias a quienes nos cuidan | Cuento original
 
-Hugo tenía tres años y medio y un sueño muy grande: quería manejar un camión de la basura. No un coche, no un avión, no un tren. Un camión de la basura. Grande, verde, con luces naranjas que daban vueltas y un brazo mecánico que levantaba los contenedores.
+Hugo tenía tres años y medio y un sueño muy grande: quería manejar un camión de la basura. No un carro, no un avión, no un tren. Un camión de la basura. Grande, verde, con luces naranjas que daban vueltas y un brazo mecánico que levantaba los contenedores.
 
 Todos los jueves por la mañana, Hugo esperaba en la ventana de su casa. Y cuando oía el ruido, grrrrr, brrrrr, pegaba la nariz al cristal.
 
@@ -666,7 +666,7 @@ Ramón se dio la vuelta, se quitó la gorra y le hizo una reverencia. Y Carmen t
 
 Desde ese día, todos los jueves, Hugo baja a saludar al camión. A veces le lleva a Ramón un dibujo: un camión verde con luces naranjas, y un niño pequeño que saluda con la mano. Ramón los guarda en la cabina del camión, pegados en el techo.
 
-Y Hugo aprendió que en la ciudad hay muchas personas que nos cuidan sin que las veamos: los que recogen la basura, los que barren las calles, los que conducen el autobús, los que cuidan los parques. Y que a todos ellos les gusta mucho escuchar una palabra muy pequeña, pero muy poderosa: gracias.
+Y Hugo aprendió que en la ciudad hay muchas personas que nos cuidan sin que las veamos: los que recogen la basura, los que barren las calles, los que manejan el autobús, los que cuidan los parques. Y que a todos ellos les gusta mucho escuchar una palabra muy pequeña, pero muy poderosa: gracias.
 
 Esa tarde, a la hora de la siesta, Hugo se durmió abrazado a su camión de juguete, soñando que manejaba uno de verdad, con luces que daban vueltas y una bocina que hacía piiii, piiii.
 
@@ -714,7 +714,7 @@ Cuando unos niños liliputienses dejaron su cometa enganchada en la punta de un 
 
 Los niños de Liliput lo adoraban. Hacían carreras por sus brazos, jugaban a las escondidas en los bolsillos de su chaqueta, y se deslizaban por su pierna como si fuera un tobogán.
 
-Por las noches, Gulliver dormía en el campo, fuera de la ciudad, porque no cabía en ninguna casa. Seiscientos liliputienses habían cosido juntos cientos de sábanas pequeñitas para hacerle una manta. Y antes de dormir, los niños se sentaban en fila sobre su pecho y le pedían:
+Por las noches, Gulliver dormía en el campo, fuera de la ciudad, porque no cabía en ninguna casa. Seiscientos liliputienses habían cosido juntos cientos de sábanas pequeñitas para hacerle una cobija. Y antes de dormir, los niños se sentaban en fila sobre su pecho y le pedían:
 
 —¡Gulliver, cuéntanos una historia de tu país!
 
@@ -772,7 +772,7 @@ En la sala de espera había otros niños. Una niña con un conejo de peluche. Un
 
 —J.A. —llamó una voz.
 
-Era la doctora. Tenía el pelo recogido, gafas de colores y una sonrisa muy grande.
+Era la doctora. Tenía el pelo recogido, lentes de colores y una sonrisa muy grande.
 
 —¡Hola, J.A.! Yo soy la doctora Elena. ¿Vienes a ver cuánto has crecido?
 
@@ -784,7 +784,7 @@ En la consulta, lo primero fue medirlo. J.A. se puso de espaldas contra una regl
 
 J.A. sonrió un poquito.
 
-Luego lo pesaron en una báscula que parecía una nave espacial. Después la doctora le miró los oídos con una lucecita.
+Luego lo pesaron en una balanza que parecía una nave espacial. Después la doctora le miró los oídos con una lucecita.
 
 —A ver... ¡aquí dentro no hay ningún dinosaurio escondido! Todo perfecto.
 
@@ -854,7 +854,7 @@ En lo profundo del bosque, dentro de una cueva calentita, vivía un osito llamad
 
 Todos los animales del bosque se estaban preparando para dormir el invierno. Pero había un problema: Bruno no podía dormir.
 
-Esa noche, Mamá Osa lo arropó con una manta de hojas secas, le dio un beso en la nariz y le dijo:
+Esa noche, Mamá Osa lo arropó con una cobija de hojas secas, le dio un beso en la nariz y le dijo:
 
 —Buenas noches, Bruno. A dormir.
 
@@ -974,7 +974,7 @@ Y sintió el corazón de su mamá, que latía despacito, tum... tum... tum...
 
 Sus ojos se cerraron solos. Sus patas se quedaron quietas. Su respiración se hizo lenta, lenta, lenta.
 
-Afuera, las hojas seguían cayendo, dando vueltas, y cubrían la entrada de la cueva como una manta de colores. La luna miró adentro y vio a los dos osos dormidos, abrazados.
+Afuera, las hojas seguían cayendo, dando vueltas, y cubrían la entrada de la cueva como una cobija de colores. La luna miró adentro y vio a los dos osos dormidos, abrazados.
 
 Y Bruno durmió toda la noche, profundamente, soñando con miel, con hojas de colores y con la primavera que llegaría después del invierno.
 
@@ -1240,15 +1240,15 @@ Y J.A. se quedó dormido, soñando con una paella gigante, del tamaño de una ca
 
 Y colorín colorado, este cuento se ha acabado.
 
-=== w3-dom-noche | 3 | dom | noche | original | La manta de los abrazos | Calma para dormir | Cuento original
+=== w3-dom-noche | 3 | dom | noche | original | La cobija de los abrazos | Calma para dormir | Cuento original
 
-Había una vez, en una casa pequeña con un jardín lleno de flores, una abuela que tejía. Tejía bufandas, gorros, calcetines y guantes. Tejía por las mañanas, sentada al sol, y por las noches, junto a la lámpara. Sus agujas hacían clic, clic, clic, y los ovillos de lana de colores rodaban por el suelo.
+Había una vez, en una casa pequeña con un jardín lleno de flores, una abuela que tejía. Tejía bufandas, gorros, medias y guantes. Tejía por las mañanas, sentada al sol, y por las noches, junto a la lámpara. Sus agujas hacían clic, clic, clic, y los ovillos de lana de colores rodaban por el suelo.
 
-Un día, la abuela supo que iba a nacer un bebé en la familia: un nieto. Y decidió tejerle un regalo muy especial. No una bufanda, ni un gorro. Una manta. Pero no una manta cualquiera. Una manta de los abrazos.
+Un día, la abuela supo que iba a nacer un bebé en la familia: un nieto. Y decidió tejerle un regalo muy especial. No una bufanda, ni un gorro. Una cobija. Pero no una cobija cualquiera. Una cobija de los abrazos.
 
-—¿Qué es una manta de los abrazos? —le preguntó el abuelo.
+—¿Qué es una cobija de los abrazos? —le preguntó el abuelo.
 
-—Es una manta en la que cada cuadrado guarda un abrazo —dijo la abuela—. Para que el niño nunca pase frío, esté donde esté.
+—Es una cobija en la que cada cuadrado guarda un abrazo —dijo la abuela—. Para que el niño nunca pase frío, esté donde esté.
 
 Y empezó a tejer.
 
@@ -1276,25 +1276,25 @@ Otro día, el abuelo quiso ayudar de verdad.
 
 —Yo también quiero tejer un cuadrado.
 
-La abuela se rió, porque el abuelo nunca había tejido nada. Pero le dio unas agujas y un ovillo de lana marrón. El abuelo tardó una semana entera. El cuadrado le quedó un poco torcido, con un agujerito en una esquina. Pero la abuela lo cosió en la manta igual que los demás.
+La abuela se rió, porque el abuelo nunca había tejido nada. Pero le dio unas agujas y un ovillo de lana marrón. El abuelo tardó una semana entera. El cuadrado le quedó un poco torcido, con un agujerito en una esquina. Pero la abuela lo cosió en la cobija igual que los demás.
 
 —Este es el abrazo del abuelo —dijo—. Es el más torcido y el más fuerte de todos.
 
-Cuando terminó, la abuela cosió todos los cuadrados juntos. Y la manta quedó preciosa, llena de colores, suave como un gatito.
+Cuando terminó, la abuela cosió todos los cuadrados juntos. Y la cobija quedó preciosa, llena de colores, suave como un gatito.
 
 Pero entonces llegó una noticia. El bebé había nacido, pero muy lejos. En otro país, al otro lado del mar. Y la abuela no podía viajar para dárselo.
 
-—¿Cómo le llegará la manta? —preguntó la abuela, un poco triste.
+—¿Cómo le llegará la cobija? —preguntó la abuela, un poco triste.
 
 —Por correo —dijo el abuelo—. En un paquete, con muchos sellos.
 
-Así que doblaron la manta con mucho cuidado, la metieron en una caja y escribieron una nota: "Para nuestro nieto. En cada cuadrado hay un abrazo. Cuando tengas frío, o miedo, o nos extrañes, tápate con ella".
+Así que doblaron la cobija con mucho cuidado, la metieron en una caja y escribieron una nota: "Para nuestro nieto. En cada cuadrado hay un abrazo. Cuando tengas frío, o miedo, o nos extrañes, tápate con ella".
 
 La caja viajó en un avión, por encima del mar, por encima de las nubes. Viajó en un camión. Viajó en una furgoneta. Y todo el camino, dentro de la caja, los abrazos esperaban tranquilos, calentitos, doblados entre la lana. Y un día, tocaron el timbre en una casa al otro lado del mundo.
 
-La mamá del bebé abrió la caja, sacó la manta y leyó la nota. Y se le llenaron los ojos de lágrimas, de las de alegría.
+La mamá del bebé abrió la caja, sacó la cobija y leyó la nota. Y se le llenaron los ojos de lágrimas, de las de alegría.
 
-Desde entonces, la manta de los abrazos está en la cama del niño. El niño ha crecido. Ya camina, ya corre, ya juega a la pelota. Pero cada noche, cuando llega la hora de dormir, se tapa con su manta.
+Desde entonces, la cobija de los abrazos está en la cama del niño. El niño ha crecido. Ya camina, ya corre, ya juega a la pelota. Pero cada noche, cuando llega la hora de dormir, se tapa con su cobija.
 
 Y cuando tiene frío, se tapa con el cuadrado azul, y siente el abrazo del sol.
 
@@ -1308,7 +1308,7 @@ Y a veces, cuando juega a la pelota y se cae, o cuando algo le sale mal, busca e
 
 Porque los abrazos, cuando se tejen con amor, viajan por encima del mar y llegan a donde tienen que llegar.
 
-Esta noche, la manta está lista, como siempre. Los colores brillan suavecito con la luz de la lámpara. El cuadrado naranja guarda las risas del día. El morado guarda las canciones. Y el rojo, en el centro, guarda el abrazo más grande.
+Esta noche, la cobija está lista, como siempre. Los colores brillan suavecito con la luz de la lámpara. El cuadrado naranja guarda las risas del día. El morado guarda las canciones. Y el rojo, en el centro, guarda el abrazo más grande.
 
 Así que tápate bien. Hasta la barbilla. Mete los pies debajo, para que no se escapen. Siente los abrazos, uno por uno. El del sol. El de la sombra. El del hogar. El de la alegría. El de la familia.
 
