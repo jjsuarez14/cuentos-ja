@@ -101,7 +101,7 @@ def main():
 
     print(f'{len(cuentos)} cuentos · agenda {ARRANQUE} → {ultimo} · banco: {banco or "vacío"}')
     for c in cuentos:
-        obj = 350 if c['lang'] == 'en' else (750 if c['momento'] == 'siesta' else 1200)
+        obj = (400 if int(c['id'].split('-')[1]) >= 6 else 350) if c['lang'] == 'en' else (750 if c['momento'] == 'siesta' else 1200)
         tol = 0.15 if c['lang'] == 'en' else 0.10
         dv = (c['palabras'] - obj) / obj
         if abs(dv) > tol:

@@ -1,14 +1,128 @@
 {
-  "_nota": "Asignaciones manuales por fecha. Lo que una asignación desplaza pasa al banco para reutilizarlo. Desde el 07/10/2026 las siestas de días lectivos también van al banco.",
-  "2026-10-12": {"siesta": "w3-mie-siesta"},
-  "2026-10-17": {"siesta": "w3-jue-siesta"},
-  "_ingles": "Inglés martes y jueves (desde el 15/10/2026)",
-  "2026-10-15": {"noche": "en-01"},
-  "2026-10-20": {"noche": "en-02"},
-  "2026-10-22": {"noche": "en-03"},
-  "2026-10-27": {"noche": "en-04"},
-  "2026-10-29": {"noche": "en-05"},
-  "_spidey": "Spidey y sus sorprendentes amigos: 1 por semana, solo en la app (no imprimible)",
-  "2026-10-24": {"siesta": "sp-01"},
-  "2026-11-01": {"siesta": "sp-02"}
+ "_nota": "Asignaciones manuales por fecha. Lo que una asignación desplaza pasa al banco para reutilizarlo. Desde el 07/10/2026 las siestas de días lectivos también van al banco.",
+ "2026-10-12": {
+  "siesta": "w3-mie-siesta"
+ },
+ "2026-10-17": {
+  "siesta": "w3-jue-siesta"
+ },
+ "_ingles": "Inglés martes y jueves (desde el 15/10/2026)",
+ "2026-10-15": {
+  "noche": "en-01"
+ },
+ "2026-10-20": {
+  "noche": "en-02"
+ },
+ "2026-10-22": {
+  "noche": "en-03"
+ },
+ "2026-10-27": {
+  "noche": "en-04"
+ },
+ "2026-10-29": {
+  "noche": "en-05"
+ },
+ "_spidey": "Spidey y sus sorprendentes amigos: 1 por semana, solo en la app (no imprimible)",
+ "2026-10-24": {
+  "siesta": "sp-01"
+ },
+ "2026-11-01": {
+  "siesta": "sp-02"
+ },
+ "_noviembre": "Noviembre 2026: noches nuevas n-01..n-16 + 5 noches del banco; inglés mar/jue; Spidey domingos; siestas sábados.",
+ "2026-11-02": {
+  "noche": "n-01"
+ },
+ "2026-11-04": {
+  "noche": "n-02"
+ },
+ "2026-11-06": {
+  "noche": "n-03"
+ },
+ "2026-11-07": {
+  "noche": "w4-jue-noche",
+  "siesta": "s-01"
+ },
+ "2026-11-08": {
+  "noche": "n-04",
+  "siesta": "sp-03"
+ },
+ "2026-11-09": {
+  "noche": "n-05"
+ },
+ "2026-11-11": {
+  "noche": "n-06"
+ },
+ "2026-11-13": {
+  "noche": "n-07"
+ },
+ "2026-11-14": {
+  "noche": "w5-mar-noche",
+  "siesta": "w5-sab-siesta"
+ },
+ "2026-11-15": {
+  "noche": "n-08",
+  "siesta": "sp-04"
+ },
+ "2026-11-16": {
+  "noche": "n-09"
+ },
+ "2026-11-18": {
+  "noche": "n-10"
+ },
+ "2026-11-20": {
+  "noche": "w5-jue-noche"
+ },
+ "2026-11-21": {
+  "noche": "n-11",
+  "siesta": "s-02"
+ },
+ "2026-11-22": {
+  "noche": "n-12",
+  "siesta": "sp-05"
+ },
+ "2026-11-23": {
+  "noche": "w6-mar-noche"
+ },
+ "2026-11-25": {
+  "noche": "n-13"
+ },
+ "2026-11-27": {
+  "noche": "n-14"
+ },
+ "2026-11-28": {
+  "noche": "n-15",
+  "siesta": "w6-dom-siesta"
+ },
+ "2026-11-29": {
+  "noche": "w6-jue-noche",
+  "siesta": "sp-06"
+ },
+ "2026-11-30": {
+  "noche": "n-16"
+ },
+ "2026-11-03": {
+  "noche": "en-06"
+ },
+ "2026-11-05": {
+  "noche": "en-07"
+ },
+ "2026-11-10": {
+  "noche": "en-08"
+ },
+ "2026-11-12": {
+  "noche": "en-09"
+ },
+ "2026-11-17": {
+  "noche": "en-10"
+ },
+ "2026-11-19": {
+  "noche": "en-11"
+ },
+ "2026-11-24": {
+  "noche": "en-12"
+ },
+ "2026-11-26": {
+  "noche": "en-13"
+ }
 }
