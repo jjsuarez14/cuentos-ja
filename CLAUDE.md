@@ -17,7 +17,7 @@ Usuario: Jofre (papá). Responder siempre en español latinoamericano, tratamien
 - Publicar: `python3 scripts/build.py && git add -A && git commit && git push`. Probar en producción con Playwright (iPhone 14, Europe/Madrid, fijando fecha con `page.clock.setFixedTime`).
 
 ## Reglas editoriales (acordadas con Jofre)
-- Largo: siesta 750 palabras, noche 1.200 (±10 %). Inglés ~350 (±15 %). Ojo: los borradores suelen quedar 15-30 % cortos; contar con el script y ampliar con escenas reales.
+- Largo: siesta 750 palabras, noche 1.200 (±10 %). Inglés ~400 (±15 %; en-01..05 eran ~350). Ojo: los borradores suelen quedar 15-30 % cortos; contar con el script y ampliar con escenas reales.
 - Siesta SOLO sábados, domingos y festivos escolares de Valencia (desde 07/10/2026). Noche todos los días.
 - Cuentos de vida diaria (Simón de protagonista): solo en siesta, nunca de noche (no sobreexcitar). Objetivo ≤25 %.
 - Noches: final lento y calmado, imágenes de sueño, cierre "Y colorín colorado…".
